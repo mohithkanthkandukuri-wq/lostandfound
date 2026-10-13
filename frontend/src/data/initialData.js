@@ -1,0 +1,263 @@
+export const DEMO_USERS = [
+  {
+    id: 1,
+    name: 'Alex Rivera',
+    email: 'alex.rivera@campus.edu',
+    phone: '+1 (555) 234-8901',
+    role: 'USER',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    studentId: 'ST-2024-8841',
+    department: 'Computer Science & Engineering'
+  },
+  {
+    id: 2,
+    name: 'Maya Chen',
+    email: 'maya.chen@campus.edu',
+    phone: '+1 (555) 456-7812',
+    role: 'USER',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80',
+    studentId: 'ST-2023-3920',
+    department: 'Biomedical Sciences'
+  },
+  {
+    id: 3,
+    name: 'Officer David Morgan',
+    email: 'david.morgan@campus.edu',
+    phone: '+1 (555) 019-2834',
+    role: 'ADMIN',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    studentId: 'STAFF-SEC-09',
+    department: 'Campus Safety & Lost/Found Desk'
+  }
+];
+
+export const INITIAL_ITEMS = [
+  {
+    id: 1,
+    title: 'Apple MacBook Air 13" M2 (Midnight Blue)',
+    description: 'Found inside a grey felt sleeve on table #4 near the 2nd floor silent study area. Has a subtle GitHub sticker on the lower left cover.',
+    category: 'Electronics',
+    reportType: 'FOUND',
+    location: 'Main Campus Library (Level 1 & 2)',
+    incidentDate: '2026-10-12',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80',
+    reporterId: 2,
+    reporterName: 'Maya Chen',
+    reporterEmail: 'maya.chen@campus.edu',
+    secretVerificationHint: 'What sticker is next to the GitHub logo, or what is the lock screen wallpaper?',
+    claimsCount: 1,
+    createdAt: '2026-10-12T14:30:00Z'
+  },
+  {
+    id: 2,
+    title: 'Campus Student ID & Dorm Key Card - Marcus Vance',
+    description: 'Student identification card with blue university lanyard and magnetic dormitory swipe card. Left on checkout counter at Starbucks.',
+    category: 'ID Cards',
+    reportType: 'FOUND',
+    location: 'Student Union & Dining Hall',
+    incidentDate: '2026-10-13',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&auto=format&fit=crop&q=80',
+    reporterId: 3,
+    reporterName: 'Officer David Morgan',
+    reporterEmail: 'david.morgan@campus.edu',
+    secretVerificationHint: 'Verify student ID number and date of birth at security desk.',
+    claimsCount: 0,
+    createdAt: '2026-10-13T08:15:00Z'
+  },
+  {
+    id: 3,
+    title: 'Sony WH-1000XM4 Noise Cancelling Headphones (Silver)',
+    description: 'Accidentally left in bench area after workout session between 4 PM and 5:30 PM. Stored in original black zippered case with audio cable.',
+    category: 'Electronics',
+    reportType: 'LOST',
+    location: 'Athletic Center / Gymnasium',
+    incidentDate: '2026-10-11',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80',
+    reporterId: 1,
+    reporterName: 'Alex Rivera',
+    reporterEmail: 'alex.rivera@campus.edu',
+    secretVerificationHint: 'Device Bluetooth name when turned on.',
+    claimsCount: 0,
+    createdAt: '2026-10-11T18:00:00Z'
+  },
+  {
+    id: 4,
+    title: 'Black Matte Hydro Flask 32oz with National Parks Stickers',
+    description: 'Found under the whiteboard in lecture hall 302. Has Yosemite, Zion, and Joshua Tree vinyl stickers and a slightly dented steel cap.',
+    category: 'Accessories',
+    reportType: 'FOUND',
+    location: 'Engineering Building - Room 302',
+    incidentDate: '2026-10-12',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&auto=format&fit=crop&q=80',
+    reporterId: 1,
+    reporterName: 'Alex Rivera',
+    reporterEmail: 'alex.rivera@campus.edu',
+    secretVerificationHint: 'What fourth sticker is on the bottom base?',
+    claimsCount: 0,
+    createdAt: '2026-10-12T16:20:00Z'
+  },
+  {
+    id: 5,
+    title: 'TI-84 Plus CE Color Graphing Calculator',
+    description: 'Lost during Calculus tutorial in Lab 304. Has yellow battery cover and initials "AR" etched on the back casing with stylus.',
+    category: 'Electronics',
+    reportType: 'LOST',
+    location: 'Science Complex - Lab 304',
+    incidentDate: '2026-10-10',
+    status: 'RESOLVED',
+    imagePath: 'https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?w=800&auto=format&fit=crop&q=80',
+    reporterId: 1,
+    reporterName: 'Alex Rivera',
+    reporterEmail: 'alex.rivera@campus.edu',
+    secretVerificationHint: 'Initials on rear panel.',
+    claimsCount: 1,
+    createdAt: '2026-10-10T11:00:00Z'
+  },
+  {
+    id: 6,
+    title: 'Toyota Car Key with Blue Carabiner & Gym Membership Tag',
+    description: 'Found on grass near outdoor steps of central quad. Has a silver keychain bottle opener and gym barcode token.',
+    category: 'Keys',
+    reportType: 'FOUND',
+    location: 'Central Quad & Amphitheater',
+    incidentDate: '2026-10-13',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&auto=format&fit=crop&q=80',
+    reporterId: 3,
+    reporterName: 'Officer David Morgan',
+    reporterEmail: 'david.morgan@campus.edu',
+    secretVerificationHint: 'Last 3 digits on the barcode tag.',
+    claimsCount: 0,
+    createdAt: '2026-10-13T09:00:00Z'
+  },
+  {
+    id: 7,
+    title: 'The North Face Borealis Backpack (Forest Green)',
+    description: 'Contains Organic Chemistry textbook, spiral notebooks, and laptop charger. Left behind in dining common booth.',
+    category: 'Bags',
+    reportType: 'FOUND',
+    location: 'Student Union & Dining Hall',
+    incidentDate: '2026-10-12',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&auto=format&fit=crop&q=80',
+    reporterId: 2,
+    reporterName: 'Maya Chen',
+    reporterEmail: 'maya.chen@campus.edu',
+    secretVerificationHint: 'Course code written inside front notebook cover.',
+    claimsCount: 0,
+    createdAt: '2026-10-12T19:45:00Z'
+  },
+  {
+    id: 8,
+    title: 'Prescription Glasses with Tortoiseshell Ray-Ban Frame',
+    description: 'Lost during evening study session. Black leather case with magnetic closure. Need desperately for classes!',
+    category: 'Accessories',
+    reportType: 'LOST',
+    location: 'Main Campus Library (Level 1 & 2)',
+    incidentDate: '2026-10-11',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&auto=format&fit=crop&q=80',
+    reporterId: 2,
+    reporterName: 'Maya Chen',
+    reporterEmail: 'maya.chen@campus.edu',
+    secretVerificationHint: 'Model number on inside right temple arm.',
+    claimsCount: 0,
+    createdAt: '2026-10-11T20:10:00Z'
+  },
+  {
+    id: 9,
+    title: 'Linear Algebra and Its Applications (6th Ed.) Textbook',
+    description: 'Found on windowsill near north entrance. Has yellow sticky notes on Chapter 4 eigenvalues and student notes.',
+    category: 'Books',
+    reportType: 'FOUND',
+    location: 'Business School Atrium',
+    incidentDate: '2026-10-12',
+    status: 'OPEN',
+    imagePath: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80',
+    reporterId: 1,
+    reporterName: 'Alex Rivera',
+    reporterEmail: 'alex.rivera@campus.edu',
+    secretVerificationHint: 'Name scribbled on inside front page.',
+    claimsCount: 0,
+    createdAt: '2026-10-12T12:00:00Z'
+  },
+  {
+    id: 10,
+    title: 'Patagonia Better Sweater Fleece Zip (Navy Blue, Size M)',
+    description: 'Forgotten on the back of auditorium seat row G during guest speaker event.',
+    category: 'Clothing',
+    reportType: 'FOUND',
+    location: 'Fine Arts Auditorium',
+    incidentDate: '2026-10-10',
+    status: 'RESOLVED',
+    imagePath: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=800&auto=format&fit=crop&q=80',
+    reporterId: 3,
+    reporterName: 'Officer David Morgan',
+    reporterEmail: 'david.morgan@campus.edu',
+    secretVerificationHint: 'Any initials or collar label quirks.',
+    claimsCount: 1,
+    createdAt: '2026-10-10T16:30:00Z'
+  }
+];
+
+export const INITIAL_CLAIMS = [
+  {
+    id: 101,
+    itemId: 1,
+    itemTitle: 'Apple MacBook Air 13" M2 (Midnight Blue)',
+    claimantId: 1,
+    claimantName: 'Alex Rivera',
+    claimantEmail: 'alex.rivera@campus.edu',
+    claimantPhone: '+1 (555) 234-8901',
+    message: 'This is my MacBook Air! It has a small scratch next to the trackpad and the desktop wallpaper is a high-res photo of Lake Tahoe sunset. Serial number begins with C02G.',
+    status: 'PENDING',
+    reviewMessage: null,
+    reviewedBy: null,
+    createdAt: '2026-10-12T17:15:00Z'
+  },
+  {
+    id: 102,
+    itemId: 5,
+    itemTitle: 'TI-84 Plus CE Color Graphing Calculator',
+    claimantId: 1,
+    claimantName: 'Alex Rivera',
+    claimantEmail: 'alex.rivera@campus.edu',
+    claimantPhone: '+1 (555) 234-8901',
+    message: 'Matches my TI-84 with yellow battery clip and etched initials "AR". Recovered successfully at Science Lab desk.',
+    status: 'APPROVED',
+    reviewMessage: 'Ownership confirmed with student ID and etchings. Handed over at Science Lab prep desk.',
+    reviewedBy: 3,
+    createdAt: '2026-10-10T14:00:00Z'
+  }
+];
+
+export const INITIAL_NOTIFICATIONS = [
+  {
+    id: 1,
+    userId: 1,
+    title: 'Claim Update: TI-84 Plus CE',
+    message: 'Your claim for TI-84 Plus CE was approved! You can pick it up at the Science Lab Desk.',
+    isRead: false,
+    createdAt: '2026-10-10T15:20:00Z'
+  },
+  {
+    id: 2,
+    userId: 2,
+    title: 'New Claim Received',
+    message: 'Alex Rivera submitted an ownership claim for your found MacBook Air listing.',
+    isRead: false,
+    createdAt: '2026-10-12T17:15:00Z'
+  },
+  {
+    id: 3,
+    userId: 1,
+    title: 'New Matching Item Detected',
+    message: 'A pair of headphones matching your lost report was found at Athletic Center.',
+    isRead: true,
+    createdAt: '2026-10-11T19:30:00Z'
+  }
+];
